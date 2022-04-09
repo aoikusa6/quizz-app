@@ -17,15 +17,15 @@ export const QuestionPage = (props) => {
     <form className="question-page">
       {hasQuestion &&
         props.gameQuestion.map((question, index) => (
-          <div className="question-card" key={index}>
-            <h4>
+          <div className="question-page__card" key={index}>
+            <h4 className="card-title">
               Question {index + 1} - Category: {question.category} -
               Difficulty: {question.difficulty}
             </h4>
-            <p className="question-info">{question.question}</p>
-            <div className="answers-tab">
+            <p className="card-info">{question.question}</p>
+            <div className="card-answers">
               {question.answer_list.map((answer) => (
-                <div className="single-answer" key={answer}>
+                <div className="answers__single-answer" key={answer}>
                   <input
                     type="radio"
                     id={answer}

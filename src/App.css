@@ -58,24 +58,24 @@
   display: none;
 }
 
-.question-info {
+.card-info {
   color: #4d5b9e;
   font-weight: bold;
 }
 
-.question-card {
+.question-page__card {
   padding-top: 30px;
   width: 70%;
   border-bottom: 1px solid #444;
 }
-.answers-tab {
+.card-answers {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
-.single-answer {
+.answers__single-answer {
   width: 40%;
   margin: 10px;
 }
@@ -86,7 +86,7 @@ input[type="radio"] {
   width: 0;
 }
 
-.single-answer label {
+.answers__single-answer label {
   display: inline-block;
   background-color: #ddd;
   padding: 10px 20px;
@@ -95,15 +95,15 @@ input[type="radio"] {
   border-radius: 4px;
 }
 
-.single-answer input[type="radio"]:checked + label {
+.answers__single-answer input[type="radio"]:checked + label {
   background-color: #D6DBF5;
   border-color: #293264;
 }
 
-.single-answer input[type="radio"]:focus + label {
+.answers__single-answer input[type="radio"]:focus + label {
   border: 2px dashed #444;
 }
 
-.single-answer label:hover {
+.answers__single-answer label:hover {
   background-color: #dfd;
 }
