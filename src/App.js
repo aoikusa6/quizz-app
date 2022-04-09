@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { Question } from "./components/Question";
+import { QuestionPage } from "./components/QuestionPage";
 import { StartingPage } from "./components/StartingPage";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           setIsStarted={setIsStarted}
         />
       ) : (
-        <Question gameQuestion={gameQuestion}/>
+        <QuestionPage gameQuestion={gameQuestion}/>
       )}
     </div>
   );

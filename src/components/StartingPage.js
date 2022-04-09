@@ -50,7 +50,7 @@ export const StartingPage = (props) => {
         props.setGameQuestion(
           data.results.map((question) => ({
             ...question,
-            question_list: question.incorrect_answers.concat(
+            answer_list: question.incorrect_answers.concat(
               question.correct_answer
             ),
             isChecked: false,
